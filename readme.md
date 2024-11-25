@@ -1,7 +1,29 @@
-<h1>Trabajo Integrador POO</h1>
-<h4>Segundo cuatrimestre</h4>
+<h1>Golden Clover casino</h1>
+<h4>Trabajo Integrador POO - Segundo cuatrimestre</h4>
 
 <hr>
+
+
+## Instalación
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/MicaBahurlet/IntegradorSegundoCuatrimestre.git
+2. Instalar las dependencias:
+   ```bash
+   npm install
+## Correr en consola
+
+1. Compilar el ts - lo configuramos en /dist
+   ```bash
+   npx tsc
+2. Ejecutar el programa desde la consola: 
+   ```bash
+   node dist/main.js
+<h3>Librerías utilizadas:</h3>
+
+- readlineSync
+<hr>
+
 
 <h3>Consigna de trabajo:</h3>
 Generar un programa en el cual se puedan realizar apuestas dentro de un casino.
