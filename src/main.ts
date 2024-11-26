@@ -45,9 +45,9 @@ class TragamonedasClasico extends Juego implements IApuesta {
     // si el n1 es igual al 2 Y el 2 es igual al 3
     if (carrete1 === carrete2 && carrete2 === carrete3) {
       const ganancia = apuesta * 3; // triplica si gana
-      return `¡Felicidades! Obtuviste 3 números iguales. Triplicaste tu apuesta, ganaste $${ganancia}.`;
+      return `¡Felicitaciones! Obtuviste 3 números iguales. Triplicaste tu apuesta, ganaste $${ganancia}.`;
     } else {
-      return `¡Lo siento! No obtuviste 3 números iguales. ¿volvemos a jugar?`;
+      return `¡Upss! No obtuviste 3 números iguales. ¿volvemos a jugar?`;
     }
   }
 
@@ -71,7 +71,7 @@ class Ruleta extends Juego implements IApuesta {
       return "Número inválido. El número seleccionado debe estar entre 1 y 38.";
     }
 
-    console.log("Ruleta girando...");
+    readlineSync.question("Presiona 'Enter' para comenzar a girar la ruleta...");
     // obtener un número aleatorio entre 1 y 38
     const numeroGanador = Math.floor(Math.random() * 38) + 1;
 
