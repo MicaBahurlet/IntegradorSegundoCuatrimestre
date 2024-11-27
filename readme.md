@@ -11,6 +11,10 @@
 2. Instalar las dependencias:
    ```bash
    npm install
+3. Actualizar repo local en base a remoto:
+   ```bash
+   git pull origin main
+
 ## Correr en consola
 
 1. Compilar el ts - lo configuramos en /dist
