@@ -8,7 +8,7 @@ let resultados: string[] = [];
 function main(): void {
 
   //msj de bienvenida
-  console.log("\n=== Bienvenido a Amendo Casino ===");
+  console.log("\n=== 🤞 Bienvenido a Golden Clover Casino 💰 ===");
   console.log("¡Disfruta de la mejor experiencia de juegos de azar!\n");
 
   //para mantener el bucle hasta que el jugador decida salir
@@ -55,7 +55,7 @@ function main(): void {
       case 3:
         //cambiamos el valor de la variable a false para romper el while y mensajito
         continuar = false;
-        console.log("¡Gracias por jugar, nos vemos pronto!");
+        console.log("👋 ¡Gracias por jugar, nos vemos pronto!");
         break;
 
       //mensajito de default por si selecciona una opcion incorrecta en el menú

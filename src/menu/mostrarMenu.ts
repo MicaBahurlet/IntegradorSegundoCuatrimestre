@@ -6,15 +6,15 @@ import { Dados } from "../models/Dados";
 
 //exportamos la cantidad de juegos para pasarlos al main el numero es la apuesta minima
 export const juegos: Juego[] = [
-  new TragamonedasClasico("Tragamonedas Clásico", 10),
-  new Ruleta("Ruleta", 20),
-  new Dados("Dados", 15),
+  new TragamonedasClasico("🎰 Tragamonedas Clásico", 10),
+  new Ruleta("🍀 Ruleta", 20),
+  new Dados("🎲 Dados", 15),
 ];
 
 //fn para mostrar las opciones del menu
 export function mostrarMenu(): void {
   console.log("\n=== Menú Principal ===");
   console.log("1. Ver juegos disponibles");
-  console.log("2. Exportar resultados a Excel");
+  console.log("2. Exportar resultados de los juegos");
   console.log("3. Salir");
 }

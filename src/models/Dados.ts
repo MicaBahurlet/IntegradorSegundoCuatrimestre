@@ -1,5 +1,5 @@
 import { Juego } from "./Juego";
-import { IApuesta } from "../interfaces/IApuesta";
+import { IApuesta } from "../interface/IApuesta";
 
 export class Dados extends Juego implements IApuesta {
   //como hereda de Juego implementa jugar y aqui esta la logica de tirar los dados, el resultado, etc.
@@ -20,10 +20,10 @@ export class Dados extends Juego implements IApuesta {
     // se gana cuando es impar, asi que si el resultado de la division es distinto a 0 la suma es impar
     if (suma % 2 !== 0) {
       const ganancia = apuesta * 2;
-      resultado += `¡Felicitaciones! Ganaste $${ganancia}.`;
+      resultado += `🎊 ¡Felicitaciones! Ganaste $${ganancia}.`;
       resultado += " Recuerda que ganarás siempre y cuando de la suma de los dos dados resulte un numero impar.";
     } else {
-      resultado += "¡Ups! Perdiste. ¿Quieres intentarlo de nuevo?";
+      resultado += "🤷‍♀️ ¡Ups! Perdiste. ¿Quieres intentarlo de nuevo?";
       resultado += " Recuerda que ganarás siempre y cuando de la suma de los dos dados resulte un numero impar.";
     }
 
