@@ -1,5 +1,5 @@
 import { Juego } from "./Juego";
-import { IApuesta } from "../interfaces/IApuesta";
+import { IApuesta } from "../interface/IApuesta";
 import * as readlineSync from "readline-sync";
 
 export class TragamonedasClasico extends Juego implements IApuesta {
@@ -9,8 +9,8 @@ export class TragamonedasClasico extends Juego implements IApuesta {
     }
     // msj bienvenida
 
-    console.log("¡Bienvenido al Tragamonedas Clásico!");
-    console.log("Recuerda que este es un juego de azar. Para ganar, necesitas obtener 3 números iguales.");
+    console.log("🎰 ¡Bienvenido al Tragamonedas Clásico!");
+    console.log("➡️ Recuerda que este es un juego de azar. Para ganar, necesitas obtener 3 números iguales.");
 
     // enter para comenzar 
 
@@ -26,9 +26,9 @@ export class TragamonedasClasico extends Juego implements IApuesta {
     // si el n1 es igual al 2 Y el 2 es igual al 3
     if (carrete1 === carrete2 && carrete2 === carrete3) {
       const ganancia = apuesta * 3;
-      return `¡Felicitaciones! Obtuviste 3 números iguales y triplicaste tu apuesta, ganaste $${ganancia}.`;
+      return `🎊  ¡Felicitaciones! Obtuviste 3 números iguales y triplicaste tu apuesta, ganaste $${ganancia}.`;
     } else {
-      return `¡Upss! No obtuviste 3 números iguales. ¿volvemos a jugar?`;
+      return `🤷‍♀️ ¡Upss! No obtuviste 3 números iguales. ¿volvemos a jugar?`;
     }
   }
 
