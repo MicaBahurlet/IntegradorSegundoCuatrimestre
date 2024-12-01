@@ -1,8 +1,7 @@
 import { Juego } from "./Juego";
-import { IApuesta } from "../interface/IApuesta";
 import * as readlineSync from "readline-sync";
 
-export class TragamonedasClasico extends Juego implements IApuesta {
+export class TragamonedasClasico extends Juego {
   jugar(apuesta: number): string {
     if (!this.validarApuesta(apuesta)) {
       return `La apuesta mínima es de ${this.apuestaMinima}. Por favor, apuesta al menos esa cantidad.`;
@@ -14,7 +13,7 @@ export class TragamonedasClasico extends Juego implements IApuesta {
 
     // enter para comenzar 
 
-    readlineSync.question("Presiona 'Enter' en tu teclado para comenzar a girar la ruleta...");
+    readlineSync.question("➡️ Presiona 'Enter' en tu teclado para comenzar a probar tu suerte...");
     // muestra numeros, en este caso elegimos hasta el 9 para hacerlo más simple, le sumamos 1 para que sean del 1 al 9
     const carrete1 = Math.floor(Math.random() * 9) + 1;
     const carrete2 = Math.floor(Math.random() * 9) + 1;
@@ -32,8 +31,4 @@ export class TragamonedasClasico extends Juego implements IApuesta {
     }
   }
 
-  // interfaz de validacion
-  validarApuesta(apuesta: number): boolean {
-    return apuesta >= this.apuestaMinima;
-  }
 }
