@@ -1,7 +1,6 @@
 import { Juego } from "./Juego";
-import { IApuesta } from "../interface/IApuesta";
 
-export class Dados extends Juego implements IApuesta {
+export class Dados extends Juego {
   //como hereda de Juego implementa jugar y aqui esta la logica de tirar los dados, el resultado, etc.
   jugar(apuesta: number): string {
     // si la apuesta es menor a la apuesta minima entonces mensaje
@@ -28,10 +27,5 @@ export class Dados extends Juego implements IApuesta {
     }
 
     return resultado;
-  }
-
-    // método de la interfaz para la validación si es mayor a la apuesta minima entonces si
-  validarApuesta(apuesta: number): boolean {
-    return apuesta >= this.apuestaMinima;
   }
 }
