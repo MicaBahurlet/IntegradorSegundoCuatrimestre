@@ -1,4 +1,5 @@
 import { Juego } from "./Juego";
+import * as readlineSync from "readline-sync";
 
 export class Dados extends Juego {
   //como hereda de Juego implementa jugar y aqui esta la logica de tirar los dados, el resultado, etc.
@@ -7,6 +8,7 @@ export class Dados extends Juego {
     if (!this.validarApuesta(apuesta)) {
       return `La apuesta mínima es de ${this.apuestaMinima}`;
     }
+    readlineSync.question("➡️ Presiona 'Enter' en tu teclado para lanzar los dados probar tu suerte...");
 
     // lanzar dos dados. Dos numeros entre 0 y 1, multiplicados por los numeros que tiene un dado (6) el floor es para redondear ese numero hacia abajo, sumamos 1 para que quede entre 1 y 6 que son los numeros del dado. Guardamos en una const los valores sumados.
     const dado1 = Math.floor(Math.random() * 6) + 1;

@@ -1,5 +1,6 @@
 import { mostrarMenu, juegos } from "./menu/mostrarMenu";
 import { exportarResultados } from "./utils/exportarResultados";
+import { verInstrucciones } from "./utils/verInstrucciones";
 import * as readlineSync from "readline-sync";
 
 //variable global para poder guardar los resultados un string, para pasarlos al exportarResultados
@@ -29,6 +30,8 @@ function main(): void {
         juegos.forEach((juego, index) =>
           console.log(`${index + 1}. ${juego.nombre} (Apuesta mínima: ${juego.apuestaMinima})`)
         );
+        //solucion rapida para vover al menu anterior
+        console.log(`${juegos.length + 1}. Volver al menú anterior`);
 
         //preguntamos al jugador que juego quiere jugar pero le restamos 1 porque el array empieza en 0
         const seleccion = readlineSync.questionInt("\nSeleccione el número del juego para apostar: ") - 1;
@@ -53,6 +56,10 @@ function main(): void {
         break;
 
       case 3:
+        verInstrucciones();
+        break;
+
+      case 4:
         //cambiamos el valor de la variable a false para romper el while y mensajito
         continuar = false;
         console.log("👋 ¡Gracias por jugar, nos vemos pronto!");

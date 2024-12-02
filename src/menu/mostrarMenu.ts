@@ -16,5 +16,6 @@ export function mostrarMenu(): void {
   console.log("\n=== Menú Principal ===");
   console.log("1. Ver juegos disponibles");
   console.log("2. Exportar resultados de los juegos");
-  console.log("3. Salir");
+  console.log("3. Ver instrucciones de los juegos");
+  console.log("4. Salir");
 }

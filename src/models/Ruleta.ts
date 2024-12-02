@@ -23,7 +23,7 @@ export class Ruleta extends Juego{
 
     // verificar si ganó, si el numero elegido es igual al ganador
     if (numeroElegido === numeroGanador) {
-      const ganancia = apuesta * 3; // gana multiplicado por 3 el monto apostado
+      const ganancia = apuesta * 3; // gana triplicado el monto apostado
       resultado += `🎊 ¡Felicitaciones! Tu ganancia es de $${ganancia}. triplicaste tu apuesta`;
     } else {
       resultado += "🤷‍♀️ ¡Upss! Perdiste, no salió el número elegido. ¿Volves a jugar?.";
