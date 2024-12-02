@@ -1,24 +1,24 @@
 import { Juego } from "./Juego";
 import * as readlineSync from "readline-sync";
 
-export class Ruleta extends Juego{
+export class Ruleta extends Juego {
   jugar(apuesta: number): string {
     // si la apuesta es menor a la apuesta minima entonces mensaje
     if (!this.validarApuesta(apuesta)) {
       return `La apuesta mínima es de ${this.apuestaMinima}`;
     }
 
-    // pedimos que elija un número entre 1 y 38
-    const numeroElegido = readlineSync.questionInt("Elija un número entre 1 y 38 para apostar: ");
-    if (numeroElegido < 1 || numeroElegido > 38) {
-      return "Número inválido. El número seleccionado debe estar entre 1 y 38.";
+    // pedimos que elija un número entre 1 y 36
+    const numeroElegido = readlineSync.questionInt("Elija un número entre 1 y 36 para apostar: ");
+    //Se excluye el valor 0 por las reglas del juego
+    if (numeroElegido < 1 || numeroElegido > 36) {
+      return "Número inválido. El número seleccionado debe estar entre 1 y 36.";
     }
 
     readlineSync.question("➡️ Presiona 'Enter' en tu teclado para comenzar a girar la ruleta y probar tu suerte...");
-
-    // obtenemos un número aleatorio entre 1 y 38. redondeamos hacia abajo y sumamos 1 para asegurarnos que quede entre 1 y 38
-    const numeroGanador = Math.floor(Math.random() * 38) + 1;
-
+    //Math random devuelve un número aleatorio entre 0 y 1. Math floor reduce el n° al entero más chico. Lo multiplicamos por 36 y le sumamos 1 para  evitar que salga el 0.
+    const numeroGanador = Math.floor(Math.random() * 36) + 1;
+    //Almacenamos el valor del número en una variable resultado
     let resultado = `El número es ${numeroGanador}. `;
 
     // verificar si ganó, si el numero elegido es igual al ganador

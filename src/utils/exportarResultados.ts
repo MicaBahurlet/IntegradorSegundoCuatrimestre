@@ -7,7 +7,7 @@ export function exportarResultados(resultados: string[]): void {
     return;
   }
 
-  const contenido = resultados.join("\n");  // para separar los resultados
-  fs.writeFileSync("resultados.txt", contenido);
+  const contenidoAexportar = resultados.join("\n");  // para separar los resultados
+  fs.writeFileSync("resultados.txt", contenidoAexportar);     //to do export números de resultado
   console.log("Resultados exportados..."); 
 }

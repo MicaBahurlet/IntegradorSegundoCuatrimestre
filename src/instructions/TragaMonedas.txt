@@ -1,6 +1,6 @@
 JUEGO TRAGAMONEDAS CÁSICO! 
 Un juego de azar dentro de Golden Crover casino, GANARAS siempre y cuando obtengas 3 números IGUALES 
 INSTRUCCIONES: 
-1- Ingresá un monto de apuesta, la apuesta mínima es de 10. Tene en cuenta que cuanto mayor sea tu apuesta mayor será tu ganancia.Ganaras el triple del dinero que apuestes.
-2- Presioná ENTER en tu teclado para activar el tragamonedas.
-3- Visualizar en pantalla el resultado de los números obtenidos
+Paso 1) Ingresá un monto de apuesta, la apuesta mínima es de 10. Tene en cuenta que cuanto mayor sea tu apuesta mayor será tu ganancia.Ganaras el cuádruple del dinero que apuestes.
+Paso 2) Presioná ENTER en tu teclado para activar el tragamonedas.
+Paso 3) Visualizar en pantalla el resultado de los números obtenidos
