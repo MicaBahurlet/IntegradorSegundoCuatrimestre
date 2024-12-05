@@ -1,6 +1,15 @@
 import { Juego } from "./Juego";
+import { TragamonedasClasico } from "./TragamonedasClasico";
+import { Ruleta } from "./Ruleta";
+import { Dados } from "./Dados";
 
-export class Casino  {
+// const juegosDisponibles: Juego[] = [
+//   new TragamonedasClasico("🎰 Tragamonedas Clásico", 30),
+//   new Ruleta("🍀 Ruleta", 20),
+//   new Dados("🎲 Dados", 15),
+// ];
+
+export class Casino {
   private nombre: string;
   private juegos: Juego[];
   //agregar dirección
@@ -26,7 +35,11 @@ export class Casino  {
     console.log(`\n=== Bienvenido al ${this.nombre} ===`);
     console.log("Juegos disponibles:");
     this.juegos.forEach((juego, index) => {
-      console.log(`${index + 1}. ${juego.nombre} (Apuesta mínima: $${juego.apuestaMinima})`);
+      console.log(
+        `${index + 1}. ${juego.nombre} (Apuesta mínima: $${
+          juego.apuestaMinima
+        })`
+      );
     });
   }
 
@@ -50,3 +63,9 @@ export class Casino  {
     return this.resultados;
   }
 }
+
+export const casino = new Casino("Golden Clover Casino", [
+    new TragamonedasClasico("🎰 Tragamonedas Clásico", 30),
+    new Ruleta("🍀 Ruleta", 20),
+    new Dados("🎲 Dados", 15),
+  ]);

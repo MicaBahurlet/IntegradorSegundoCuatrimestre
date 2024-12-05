@@ -1,7 +1,9 @@
-import { IApuesta } from "../interface/IApuesta";
+export interface IApuesta {
+  // la apuesta siempre tiene que ser un número y devuelve boolean
+    validarApuesta(apuesta: number): boolean;
+}
 
 //Siguiendo la idea de GENERALIZACIÓN, cualquier juego debe tener: 
-
 export abstract class Juego implements IApuesta {
     //un nombre del tipo string
     nombre: string;
