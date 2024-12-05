@@ -1,6 +1,7 @@
 // Casino:
 import { Juego } from "./Juego";
-import { TragamonedasClasico } from "./TragamonedasClasico";
+import { TragamonedasAnimales } from "./TragamonedasAnimales";
+import { TragamonedasEspacial } from "./TragamonedasEspacial";
 import { Ruleta } from "./Ruleta";
 import { Dados } from "./Dados";
 
@@ -66,7 +67,8 @@ export class Casino {
 }
 
 export const casino = new Casino("Golden Clover Casino", [
-    new TragamonedasClasico("🎰 Tragamonedas Clásico", 30),
+    new TragamonedasAnimales("🎰 Tragamonedas Animales", 30),
+    new TragamonedasEspacial("🚀 Tragamonedas Espacial", 40),
     new Ruleta("🍀 Ruleta", 20),
     new Dados("🎲 Dados", 15),
   ]);

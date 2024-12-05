@@ -8,7 +8,7 @@ export abstract class Juego implements IApuesta {
     //un nombre del tipo string
     nombre: string;  //private o protected analizar casos
     //una apuesta minima del tipo number
-   apuestaMinima: number;
+    apuestaMinima: number;
   
     //inicializa y cualquier clase que herede de Juego debe tener un nombre y una apuesta minima
     constructor(nombre: string, apuestaMinima: number) {
