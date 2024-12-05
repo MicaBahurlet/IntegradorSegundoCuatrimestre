@@ -1,7 +1,7 @@
-import { Juego } from "./Juego";
+import { Juego } from "./Juego";     //hacer clase tragamonedas y 2 versiones hijas y clase casino 
 import * as readlineSync from "readline-sync";
 
-export class TragamonedasClasico extends Juego {            //agregar atributos y constructor
+export class TragamonedasClasico extends Juego {            //agregar atributos y constructor?
   jugar(apuesta: number): string {
     if (!this.validarApuesta(apuesta)) {
       return `La apuesta mínima es de ${this.apuestaMinima}. Por favor, apuesta al menos esa cantidad.`;

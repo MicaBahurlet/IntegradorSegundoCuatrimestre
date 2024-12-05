@@ -2,6 +2,8 @@ import { Juego } from "./Juego";
 import * as readlineSync from "readline-sync";
 
 export class Ruleta extends Juego {
+    //agregar atributos y constructor?
+    
   jugar(apuesta: number): string {
     // si la apuesta es menor a la apuesta minima entonces mensaje
     if (!this.validarApuesta(apuesta)) {
