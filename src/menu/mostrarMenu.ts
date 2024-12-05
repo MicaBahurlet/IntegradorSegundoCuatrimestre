@@ -4,6 +4,7 @@ import { Ruleta } from "../models/Ruleta";
 import { Dados } from "../models/Dados";
 
 //exportamos la cantidad de juegos para pasarlos al main el numero es la apuesta minima
+//array que contiene los 3 juegos disponibles
 export const juegos: Juego[] = [
   new TragamonedasClasico("🎰 Tragamonedas Clásico", 30),
   new Ruleta("🍀 Ruleta", 20),
