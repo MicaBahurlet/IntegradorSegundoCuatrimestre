@@ -35,7 +35,7 @@ function main(): void {
           continue;
         }
         const apuesta = readlineSync.questionInt("Ingrese su monto de apuesta: ");
-        console.log(casino.jugarJuego(juegoSeleccionado - 1, apuesta));
+        console.log(casino.procesarJugada(juegoSeleccionado - 1, apuesta));
         break;
 
       case 2:

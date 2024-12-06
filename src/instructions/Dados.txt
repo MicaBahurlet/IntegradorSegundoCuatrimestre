@@ -1,5 +1,6 @@
-JUEGO DE DADOS! 
-Un juego de azar dentro de Golden Crover casino, GANARAS siempre y cuando la suma de los dados de como resultado un numero IMPAR. 
+🎲 JUEGO DE DADOS! 🎲 
+Un juego de azar dentro de Golden Crover Casino.
+GANARAS siempre y cuando la suma de los dados de como resultado un numero IMPAR. 
 INSTRUCCIONES: 
 Paso 1) Ingresá un monto de apuesta, la apuesta mínima es de 10. Tene en cuenta que cuanto mayor sea tu apuesta mayor será tu ganancia.Ganaras el doble del dinero que apuestes.
 Paso 2) Presioná ENTER en tu teclado para lanzar 2 dados.

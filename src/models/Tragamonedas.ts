@@ -8,14 +8,12 @@ export class Tragamonedas extends Juego {
     this.simbolos = simbolos;
   }
 
-  //bienvenida del menu de las versiones
-  mostrarBienvenida(): void {
+  mostrarBienvenida(): void {                 //Bienvenida del menú de las versiones de tragamonedas
     console.log(`🎰 ¡Bienvenido al ${this.nombre}!`);
     console.log(`➡️ Necesitas obtener 3 símbolos iguales para ganar.`);
   }
 
-    //tenemos que implementarla si o si porque es una instancia de juego
-  jugar(apuesta: number): string {
+  jugar(apuesta: number): string {          //Implementación obligatoria porque es una instancia de juego
     if (!this.validarApuesta(apuesta)) {
       return `La apuesta mínima es de ${this.apuestaMinima}. Por favor, apuesta al menos esa cantidad.`;
     }

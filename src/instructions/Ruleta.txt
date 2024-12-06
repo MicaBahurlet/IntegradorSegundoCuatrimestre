@@ -1,5 +1,6 @@
-JUEGO DE RULETA!
-Un juego de azar dentro de Golden Crover casino, GANARAS siempre y cuando salga en la ruleta el numero al que apostaste. 
+🪙 JUEGO DE RULETA! 🪙
+Un juego de azar dentro de Golden Crover Casino.
+GANARAS siempre y cuando salga en la ruleta el numero al que apostaste. 
 INSTRUCCIONES: 
 Paso 1) Ingresá un monto de apuesta, la apuesta mínima es de 20. Tene en cuenta que cuanto mayor sea tu apuesta mayor será tu ganancia.Ganaras el triple del dinero que apuestes.
 Paso 2) Elegí un número entre el 1 y el 38. Nuestra ruleta, como la de todo casino, tiene una ruleta de 38 números. 

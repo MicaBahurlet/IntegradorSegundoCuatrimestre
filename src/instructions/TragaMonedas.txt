@@ -1,5 +1,6 @@
-JUEGO TRAGAMONEDAS CÁSICO! 
-Un juego de azar dentro de Golden Crover casino, GANARAS siempre y cuando obtengas 3 números IGUALES 
+ 🎰 JUEGO TRAGAMONEDAS CÁSICO! 🎰 
+Un juego de azar dentro de Golden Crover Casino. Podes elegir temática Animal o Espacial
+GANARAS siempre y cuando obtengas 3 emojis IGUALES. 
 INSTRUCCIONES: 
 Paso 1) Ingresá un monto de apuesta, la apuesta mínima es de 10. Tene en cuenta que cuanto mayor sea tu apuesta mayor será tu ganancia.Ganaras el cuádruple del dinero que apuestes.
 Paso 2) Presioná ENTER en tu teclado para activar el tragamonedas.
