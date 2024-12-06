@@ -1,6 +1,6 @@
 import { Juego } from "./Juego";
 
-export class Tragamonedas extends Juego {
+export abstract class Tragamonedas extends Juego {
   protected simbolos: string[];
 
   constructor(nombre: string, apuestaMinima: number, simbolos: string[]) {
@@ -8,15 +8,12 @@ export class Tragamonedas extends Juego {
     this.simbolos = simbolos;
   }
 
-  mostrarBienvenida(): void {                 //Bienvenida del menú de las versiones de tragamonedas
+  //bienvenida del menu de las versiones
+  mostrarBienvenida(): void {
     console.log(`🎰 ¡Bienvenido al ${this.nombre}!`);
-    console.log(`➡️ Necesitas obtener 3 símbolos iguales para ganar.`);
+    console.log(`➡️ Recordá que necesitas obtener 3 símbolos iguales para GANAR.`);
   }
 
-  jugar(apuesta: number): string {          //Implementación obligatoria porque es una instancia de juego
-    if (!this.validarApuesta(apuesta)) {
-      return `La apuesta mínima es de ${this.apuestaMinima}. Por favor, apuesta al menos esa cantidad.`;
-    }
-    return `¡Apuesta válida! Pero aún no hemos definido la lógica del juego.`;
-  }
+    //Que luego cada instancia de Tragamonedas implemente su jugar
+    abstract jugar(apuesta: number): string
 }
