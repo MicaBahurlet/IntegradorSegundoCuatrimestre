@@ -3,5 +3,5 @@ Un juego de azar dentro de Golden Crover casino, GANARAS siempre y cuando salga 
 INSTRUCCIONES: 
 Paso 1) Ingresá un monto de apuesta, la apuesta mínima es de 20. Tene en cuenta que cuanto mayor sea tu apuesta mayor será tu ganancia.Ganaras el triple del dinero que apuestes.
 Paso 2) Elegí un número entre el 1 y el 38. Nuestra ruleta, como la de todo casino, tiene una ruleta de 38 números. 
-Paso 3) Presioná ENTER en tu teclado para que comience a girar la ruleta
-Paso 4) Visualizá en pantalla el resultado
+Paso 3) Presioná ENTER en tu teclado para que comience a girar la ruleta.
+Paso 4) Visualizá en pantalla el resultado.

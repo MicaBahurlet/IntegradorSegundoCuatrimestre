@@ -2,7 +2,8 @@ import { Tragamonedas } from "./Tragamonedas";
 import * as readlineSync from "readline-sync";
 
 export class TragamonedasAnimales extends Tragamonedas {
-  constructor(nombre: string, apuestaMinima: number, simbolos: string[] = ["🦁", "🐯", "🦊", "🦄", "🐵", "🐶", "🐱", "🐮", "🐷"]) {
+  constructor(nombre: string, apuestaMinima: number) {
+    const simbolos = ["🐶", "🦁", "🐷", "🐰", "🐱"];
     super(nombre, apuestaMinima, simbolos);
   }
 

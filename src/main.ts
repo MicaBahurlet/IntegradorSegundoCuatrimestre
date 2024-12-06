@@ -13,22 +13,24 @@ export function mostrarMenu(): void {
 }
 
 function main(): void {
-  console.log("\n=== Bienvenido a Golden Clover Casino ===\n");
+  console.log("\n=== 💰 Bienvenido a Golden Clover Casino 💰 ===\n");
+  console.log("🍀 Tu sitio para encontrar los mejores juegos de azar 🍀");
   let continuar = true;
 
   while (continuar) {
     mostrarMenu();
-    const opcion = readlineSync.questionInt("Seleccione una opción: ");
-    if (isNaN(opcion)) {
-      console.log("Ingrese una opción válida.");
-      continue;
+    const opcion = readlineSync.question("Seleccione una opción: ");
+
+    // validacion para la entrada por teclado
+    const opcionNumerica = parseInt(opcion, 10);
+    if (isNaN(opcionNumerica) || opcionNumerica < 1 || opcionNumerica > 4) {
+      console.log("Opción inválida. Seleccione un número que aparezca en pantalla.");
+      continue; 
     }
 
-    switch (opcion) {
+    switch (opcionNumerica) {
       case 1:
         casino.mostrarJuegos();
-        //solucion rapida para vover al menu anterior
-        // console.log(`${juegos.length + 1}. Volver al menú anterior`);
         const juegoSeleccionado = readlineSync.questionInt("Seleccione el número del juego que desee jugar: ");
         if (isNaN(juegoSeleccionado) || juegoSeleccionado < 1 || juegoSeleccionado > casino.getJuegos().length) {
           console.log("Opción inválida. Por favor, ingrese un número de juego mostrado en pantalla.");
@@ -48,12 +50,8 @@ function main(): void {
 
       case 4:
         continuar = false;
-        console.log("¡Gracias por jugar!");
+        console.log("👋 ¡Gracias por elegirnos, nos vemos pronto!");
         break;
-
-      default:
-        console.log("Opción inválida.");
-        //validación 
     }
   }
 }

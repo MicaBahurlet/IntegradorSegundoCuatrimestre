@@ -2,7 +2,8 @@ import { Tragamonedas } from "./Tragamonedas";
 
 export class TragamonedasEspacial extends Tragamonedas {
   constructor(nombre: string, apuestaMinima: number) {
-    super(nombre, apuestaMinima, ["🚀", "🛸", "🌑", "🌠", "🪐"]);
+    const simbolos = ["🚀", "🛸", "🌑", "🌠", "🪐"];
+    super(nombre, apuestaMinima, simbolos);
   }
 
   //clase abstracta
