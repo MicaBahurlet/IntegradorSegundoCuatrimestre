@@ -6,13 +6,7 @@ export interface IApuesta {
 //Siguiendo la idea de GENERALIZACIÓN, cualquier juego debe tener: 
 export abstract class Juego implements IApuesta {
     //un nombre del tipo string
-/*************  ✨ Codeium Command ⭐  *************/
-    /**
-     * Crea una instancia de Juego con un nombre y una apuesta minima
-     * @param nombre El nombre del juego
-     * @param apuestaMinima La apuesta minima para jugar
-     */
-/******  77f064a2-9ef3-4ea6-99ba-0c893bc78003  *******/    protected nombre: string;  //para que todas las instancias puedan acceder a los atributos
+    protected nombre: string;  //para que todas las instancias puedan acceder a los atributos
     //una apuesta minima del tipo number
     protected apuestaMinima: number;
   
